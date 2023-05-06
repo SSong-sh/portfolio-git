@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드 유형01</title>
+    <style>
+        /* fonts */
+        @import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+
+        .nexon {
+        font-family: 'NexonLv1Gothic';
+        font-weight: 400px;
+        }
+        /* reset  */
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        li {
+            list-style: none;
+        }
+        em {
+            font-style: normal;
+        }
+
+        .blind{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        line-height: 0;
+        position: absolute;
+        text-indent: -9999px;
+        }
+
+        /* sliderType */
+        .silder_wrap{
+
+        }
+
+        .slider_inner {}
+        .slider {}
+        .slider__img {
+        background: url(img/slider01.jpg) no-repeat ; 
+        background-size: cover;
+        width: 100%;
+        height: 580px;
+        }
+        .slider__img .desc {
+        width: 1160px;
+        margin: 0 auto;
+        padding: 100px 20px;
+        }
+        .slider__img .desc span {
+            font-size: 16px;
+            background-color: #fff;
+            padding: 0 10px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .slider__img .desc h3 {
+            font-size: 80px;
+            text-transform: uppercase;
+        }
+        .slider__img .desc p {}
+        .slider__img .desc .btn {}
+        .slider__arrow {}
+        .slider__dot {}
+
+    </style>
+</head>
+<body>
+    <section id="silderType" class="silder_wrap">
+        <h2 class="blind">슬라이드 유형</h2>
+        <div class="slider_inner">
+            <div class="slider">
+                <div class="slider__img">
+                    <div class="desc">
+                        <span>developer</span>
+                        <h3>welcome to my world</h3>
+                        <p>
+                            디자인부터 코딩까지 해보는 포트폴리오 <br />
+                            프론트엔드 개발자 취업 가보자고
+                        </p>
+                        <div class="btn">
+                            <a href="/">자세히 보기</a>
+                            <a href="/">사이트 보기</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="slider__arrow"></div> 
+                <div class="slider__dot"></div> 
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
