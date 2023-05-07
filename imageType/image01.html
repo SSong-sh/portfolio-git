@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 유형01</title>
+    <style>
+        /* fonts */
+        @import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+
+        .nexon {
+            font-family: 'NexonLv1Gothic';
+            font-weight: 400px;
+        }
+
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        li {
+            list-style: none;
+        }
+        em {
+            font-style: normal;
+        }
+
+
+
+        /* common */
+        .container {
+            width: 1160px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 120px 0;
+        }
+        .section > h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .section > p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 70px;
+            text-align: center;
+            color: #777;
+        }
+
+        /* imageType */
+
+        #imageType {
+        }
+        .image_wrap {}
+        .image__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 49%;
+            height: 370px;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            padding: 200px 30px 30px 30px;
+        }
+        .image.img1 {
+            background: url(img/img_bg01.jpg) no-repeat center / cover;
+        }
+        .image.img2 {
+            background: url(img/img_bg02.jpg) no-repeat center / cover;
+        }
+
+        .image__title {
+            font-size: 32px;
+            margin-bottom: 10px;
+
+        }
+        .image__desc {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            font-weight: 300;
+            padding-right: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 10px;
+
+        }
+        .image__btn {
+            font-size: 16px;
+            font-weight: 300;
+            background-color: #2C323F;
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+            opacity: 0.8;
+        }
+        .image__btn.green {
+            background-color: #474022;
+            opacity: 0.8;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <section id="imageType" class="image_wrap nexon section">
+        <h2>프로젝트 완성</h2>
+        <p>배경배너 화면입니다. 마우스 오버시 자세한 정보가 나오는 구조입니다.</p>
+        <div class="image__inner container">
+            <article class="image img1">
+                <h3 class="image__title">흩어지는 파도의 모습</h3>
+                <p class="image__desc">
+                    파랑파랑 하고 시원시원해진 바다의 모습을 보니까 얼른 8월이 돼서 제주도에 서서핑을 하러 가고 싶습니다. 애들아 제발 놀러가자
+                </p>
+                <a class="image__btn" href="/">자세히 보기</a>
+            </article>
+            <article class="image img2">
+                <h3 class="image__title">흩날리는 나무의 모습</h3>
+                <p class="image__desc">
+                    예전에는 산보다 바다를 좋아했었는데 요즘은 벌레 때문에 바다가 더 좋다. 그치만 한라산은 꼭 가보고 싶은 걸
+                </p>
+                <a class="image__btn green" href="/">자세히 보기</a>
+            </article>
+        </div>
+    </section>
+    
+</body>
+</html>
