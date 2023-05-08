@@ -3,8 +3,16 @@
 
 .nexon {
     font-family: 'NexonLv1Gothic';
-    font-weight: 400px;
+    font-weight: 400px;  
 }
+
+  /* font */
+  @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+        
+  .gmarket {
+      font-family: 'GmarketSans';
+  }
+
 /* reset  */
 * {
     margin: 0;
@@ -32,6 +40,15 @@ img {
     overflow: hidden;
     line-height: 0;
     position: absolute;
+    text-indent: -9999px;
+    }
+
+.ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
     text-indent: -9999px;
     }
 
@@ -291,4 +308,42 @@ padding: 97px 20px;
 .card_body .btn {
     font-size: 16px;
     color: #222;
+}
+
+/* bannerType */
+.banner__wrap {
+    background-image: url(https://webstoryboy.github.io/web2022/webs_img/banner_bg01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner__inner {
+    text-align: center;
+    color: #fff;
+}
+.banner__title {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.banner__desc {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.banner__desc a {
+    display: block;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+.banner__sub {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-position: under;
 }
